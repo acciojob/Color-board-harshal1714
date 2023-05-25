@@ -1,18 +1,21 @@
 /*  your css code here. If applicable */
- .container{
-            display: grid;
-            gap: 2px;
-            grid-template-rows: repeat(20,15px);
-            grid-template-columns: repeat(40,15px);
-            justify-content: center;
-           height: 100vh;
-           align-content: center; 
-           
-        }
-.square{
-            background-color: rgb(29,29,29);
-            transition: 1s;
-        }
-.square:hover{
-            background-color: blueviolet;
-        }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+	background-color:rgb(29, 29, 29);
+}
+div.square {
+	background-color:rgb(29, 29, 29);
+}
+.square {
+  display: inline-block;
+  background-color: rgb(29, 29, 29);
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.square:hover {
+  background-color: rgb(29, 29, 29);
+  transition: background-color 1s ease;
+}
